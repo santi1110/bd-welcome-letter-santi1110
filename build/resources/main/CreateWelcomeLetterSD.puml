@@ -7,4 +7,28 @@ database Datasource
 participant FormLetterService
 participant FileManager
 
+App -> EmployeeService : sendFormToEmployeeWithId
+EmployeeService -> EmployeeRepository : getEmployeeById
+EmployeeRepository -> Datasource : findEmployeeById
+Datasource -> FormLetterService : generateWelcomeLetter
+FormLetterService -> FileManager : getTextFromFile
+FileManager --> FileManager: writeTextToFile
+
+alt failed to find String
+FileManager --> FormLetterService : null
+FormLetterService --> Datasource : null
+Datasource --> EmployeeRepository : null
+EmployeeRepository --> EmployeeService :RuntimeException("No String found")
+EmployeeService --> App : 500 Status
+end
+
+
+
+
+FileManager --> FormLetterService : String
+FormLetterService --> Datasource : String
+Datasource --> EmployeeRepository : String
+EmployeeRepository --> EmployeeService : String
+EmployeeService --> App : String
+
 @enduml
