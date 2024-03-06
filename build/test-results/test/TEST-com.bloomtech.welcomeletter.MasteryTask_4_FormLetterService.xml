@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-06T16:36:53" hostname="Dell-Latitude-3520" time="0.036">
+  <properties/>
+  <testcase name="generateFormLetter_returnsWelcomeLetter()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" time="0.036"/>
+  <system-out><![CDATA[File contents:
+Welcome to [company name]!
+
+Dear [fullname],
+
+We are all really excited to welcome you to our team! As agreed, your start date will be [startdate] and
+your starting salary is $[startingsalary].
+We expect to see you in our offices at [company starttime].
+
+We are looking forward to working with you!
+Welcome letter saved to: src/resources/out/WelcomeTestEmployee.txt
+File contents:
+Welcome to test company!
+
+Dear Test Employee,
+
+We are all really excited to welcome you to our team! As agreed, your start date will be 2022-08-30 and
+your starting salary is $100000.
+We expect to see you in our offices at test company.
+
+We are looking forward to working with you!
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

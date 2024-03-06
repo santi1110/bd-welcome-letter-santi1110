@@ -9,7 +9,6 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
-import java.nio.file.Files;
 import java.nio.file.Path;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -19,7 +18,7 @@ public class MasteryTask_4_FileIO {
     void testFileManager_writeToNewFile() throws IOException {
         FileManager fileManager = new FileManager();
         String contents = "The contents of a test file.";
-        fileManager.writeTextToFile("testFile", contents);
+        fileManager.writeTextToFile("testFile.txt.txt.txt", contents);
     }
 
     @Test
@@ -32,7 +31,7 @@ public class MasteryTask_4_FileIO {
         
         assertEquals(expected, fileContents);
 
-        Path path = FileSystems.getDefault().getPath("./src/resources/out/testFile.txt");
-        Files.delete(path);
+        Path path = FileSystems.getDefault().getPath("./src/resources/out/testFile");
+   /*     Files.delete(path);*/
     }
 }

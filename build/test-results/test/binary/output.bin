@@ -1,0 +1,26 @@
+File contents:
+Welcome to [company name]!
+
+Dear [fullname],
+
+iWe are all really excited to welcome you to our team! As agreed, your start date will be [startdate] and
++your starting salary is $[startingsalary].
+<We expect to see you in our offices at [company starttime].
+
+,We are looking forward to working with you!
+CWelcome letter saved to: src/resources/out/WelcomeTestEmployee.txt
+File contents:
+Welcome to test company!
+
+Dear Test Employee,
+
+hWe are all really excited to welcome you to our team! As agreed, your start date will be 2022-08-30 and
+!your starting salary is $100000.
+5We expect to see you in our offices at test company.
+
+,We are looking forward to working with you!
+
+DWelcome letter saved to: src/resources/out/testFile.txt.txt.txt.txt
+File contents:
+The contents of a test file.
+

@@ -2,6 +2,7 @@ package com.bloomtech.welcomeletter.models;
 
 public class Company {
     private static int maxId = 1;
+
     private int id;
 
     private String companyname;
@@ -36,41 +37,44 @@ public class Company {
         private String companyname;
         private String country;
 
-        public Builder(){
-            id  = maxId;
+        public Builder() {
+            id = maxId;
             maxId++;
         }
 
 
-
         //TODO: Implement Builder Pattern
-    public Builder withId(int idToUse){
+        public Builder withId(int idToUse) {
             this.id = idToUse;
             return this;
-    }
-    public Builder withCompanyname(String companynameToUse){
+        }
+
+        public Builder withCompanyname(String companynameToUse) {
             this.companyname = companynameToUse;
             return this;
-    }
-    public Builder withCountry(String countryToUse){
+        }
+
+        public Builder withCountry(String countryToUse) {
             this.country = countryToUse;
             return this;
-    }
-    public Company build(){
+        }
+
+        public Company build() {
             return new Company(this);
+        }
+
     }
-
-
     public int getId() {
 
             return id;
     }
 
     public String getCompanyname() {
-        return companyname;
+            return companyname;
+
     }
 
-    public String getCountry() {
+        public String getCountry() {
         return country;
     }
-}}
+}
